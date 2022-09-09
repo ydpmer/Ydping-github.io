@@ -1,52 +1,77 @@
-header:
-  - titles:
-      # @start locale config
-      en      : &EN       Archive
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  归档
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  歸檔
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       아카이브
-      ko-KR   : *KO
-      fr      : &FR       Archives
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Arşivdekiler
-      # @end locale config
-    url: /archive.html
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
-  - titles:
-      # @start locale config
-      en      : &EN       About
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       소개
-      ko-KR   : *KO
-      fr      : &FR       À propos
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Hakkında
-      # @end locale config
-    url: /about.html
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  nav:
+    - title: "Services"
+      section: services
+    - title: "Portfolio"
+      section: portfolio
+    - title: "About"
+      section: about
+    - title: "Timeline"
+      section: timeline
+    - title: "Team"
+      section: team
+    - title: "Contact"
+      section: contact
+    - title: "Theme Source"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  nav:
+    - title: "Servicios"
+      section: servicios
+    - title: "Portafolio"
+      section: portafolio
+    - title: "Sobre Nosotros"
+      section: nosotros
+    - title: "Cronología"
+      section: cronologia
+    - title: "Equipo"
+      section: equipo
+    - title: "Contáctenos"
+      section: contacto
+    - title: "Fuente de la plantilla"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
+
+# Deutsch
+# -----------------
+de: &DEFAULT_DE
+  nav:
+    - title: "Leistungen"
+      section: Leistungen
+    - title: "Portfolio"
+      section: Portfolio
+    - title: "Über uns"
+      section: Ueber
+    - title: "Geschichte"
+      section: Geschichte
+    - title: "Team"
+      section: Team
+    - title: "Kontakt"
+      section: Kontakt
+    - title: "Quellcode des Themas"
+      url: https://github.com/raviriley/agency-jekyll-theme/
