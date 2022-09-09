@@ -1,9 +1,10 @@
 ---
-​---
-layout: article
-title: Document - Writing Posts
-mathjax: true
-​---
+title: Post with Header Image
+tags: TeXt
+article_header:
+  type: cover
+  image:
+    src: /screenshot.jpg
 ---
 
 # java学习笔记
